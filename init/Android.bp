@@ -1,8 +1,8 @@
 cc_library_static {
-    name: "libinit_s5neolte",
+    name: "libinit_xcover4lte",
     recovery_available: true,
     srcs: [
-        "init_s5neolte.cpp",
+        "init_xcover4lte.cpp",
     ],
     whole_static_libs: ["libbase"],
     include_dirs: [

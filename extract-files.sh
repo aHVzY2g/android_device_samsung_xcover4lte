@@ -18,7 +18,7 @@
 set -e
 
 VENDOR=samsung
-DEVICE=s5neolte
+DEVICE=xcover4lte
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

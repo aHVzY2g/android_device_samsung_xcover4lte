@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/s5neolte
+LOCAL_PATH := device/samsung/xcover4lte
 
-ifneq ($(filter s5neolte,$(TARGET_DEVICE)),)
+ifneq ($(filter xcover4lte,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

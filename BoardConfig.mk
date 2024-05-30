@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
-# Inherit from universal7580-common
-include device/samsung/universal7580-common/BoardConfigCommon.mk
+# Inherit from universal7570-common
+include device/samsung/universal7570-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/s5neolte
+LOCAL_PATH := device/samsung/xcover4lte
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
-TARGET_OTA_ASSERT_DEVICE := s5neolte,s5neoltexx,s5neolteub,s5neoltevl
+TARGET_OTA_ASSERT_DEVICE := xcover4lte,xcover4ltexx,xcover4lteub,xcover4ltevl
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -36,7 +36,7 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_s5neolte
+TARGET_INIT_VENDOR_LIB := libinit_xcover4lte
 
 # Partitions
 TARGET_USERIMAGES_USE_F2FS := true
@@ -50,7 +50,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12096372736
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_s5neolte_defconfig
+TARGET_KERNEL_CONFIG := lineageos_xcover4lte_defconfig
 
 # Shim
 TARGET_LD_SHIM_LIBS += \
@@ -64,4 +64,4 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
-BOARD_SEPOLICY_DIRS += device/samsung/s5neolte/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/xcover4lte/sepolicy

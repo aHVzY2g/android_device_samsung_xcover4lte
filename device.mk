@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/s5neolte
+LOCAL_PATH := device/samsung/xcover4lte
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -38,7 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.universal7580 \
+    camera.universal7570 \
     Snap
 
 # hardware/samsung/AdvancedDisplay (MDNIE)
@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0
 
 PRODUCT_COPY_FILES += \
-    device/samsung/universal7580-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
+    device/samsung/universal7570-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -138,8 +138,8 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
-# Inherit from universal7580-common
-$(call inherit-product, device/samsung/universal7580-common/device-common.mk)
+# Inherit from universal7570-common
+$(call inherit-product, device/samsung/universal7570-common/device-common.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/s5neolte/s5neolte-vendor.mk)
+$(call inherit-product, vendor/samsung/xcover4lte/xcover4lte-vendor.mk)

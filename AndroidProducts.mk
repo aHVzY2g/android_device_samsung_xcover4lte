@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/s5neolte
+LOCAL_PATH := device/samsung/xcover4lte
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_s5neolte.mk
+    $(LOCAL_DIR)/lineage_xcover4lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_s5neolte-user \
-    lineage_s5neolte-userdebug \
-    lineage_s5neolte-eng
+    lineage_xcover4lte-user \
+    lineage_xcover4lte-userdebug \
+    lineage_xcover4lte-eng
