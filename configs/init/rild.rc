@@ -1,0 +1,14 @@
+# rild.rc
+on init
+    start ril-daemon
+
+on property:ro.radio.noril=1
+    stop ril-daemon
+
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log
+    writepid /dev/cpuset/foreground/tasks
