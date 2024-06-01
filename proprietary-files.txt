@@ -15,7 +15,8 @@ vendor/firmware/mfc_fw.bin
 vendor/firmware/mfc_ldfw.bin
 
 # Image subsystem
-vendor/firmware/fimc_is_fd.bin
+vendor/firmware/fimc_is_lib.bin
+# vendor/firmware/fimc_is_fd.bin
 # vendor/firmware/fimc_is_fw2_3p3.bin
 
 # Mobicore
@@ -40,8 +41,8 @@ app/mcRegistry/ffffffffd00000000000000000000016.tlbin:vendor/app/mcRegistry/ffff
 
 
 # RIL from a3xeltexx (A310FXXU4CSB2)
-lib/libsec-ril.so
-lib/libsec-ril-dsds.so
+vendor/lib/libsec-ril.so
+vendor/lib/libsec-ril-dsds.so
 
 # Sensors
 #lib/hw/sensors.universal7570.so
