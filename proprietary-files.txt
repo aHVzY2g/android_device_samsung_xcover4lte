@@ -1,21 +1,22 @@
-# all unpinned blobs come from SM-G903W stock (nougat)
+# all unpinned blobs come from SM-G390F stock (9.0)
 
 # Bluetooth
-vendor/firmware/bcm43455_V0147_0248.hcd
+# vendor/firmware/bcm43455_V0147_0248.hcd
 
 # Camera
-lib/hw/camera.universal7570.so:lib/hw/camera.vendor.universal7570.so
-lib/libexynoscamera.so
-vendor/firmware/setfile_3p3.bin
+# lib/hw/camera.universal7570.so:lib/hw/camera.vendor.universal7570.so
+# lib/libexynoscamera.so
+vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
 # Media
 # S5P Multi Format Codec
 vendor/firmware/mfc_fw.bin
+vendor/firmware/mfc_ldfw.bin
 
 # Image subsystem
 vendor/firmware/fimc_is_fd.bin
-vendor/firmware/fimc_is_fw2_3p3.bin
+# vendor/firmware/fimc_is_fw2_3p3.bin
 
 # Mobicore
 app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
@@ -39,31 +40,31 @@ app/mcRegistry/fffffffd000000000000000000000016.tlbin:vendor/app/mcRegistry/ffff
 
 
 # RIL from a3xeltexx (A310FXXU4CSB2)
-lib/libsec-ril.so|153aba6cb5dfbbc36e8f2216f354aa5a6c950786
-lib/libsec-ril-dsds.so|6270e1306ca5b3e84c3c005e883534349587dc16
+lib/libsec-ril.so
+lib/libsec-ril-dsds.so
 
 # Sensors
-lib/hw/sensors.universal7570.so
-lib/libinvensense_hal.so
-lib/libmllite.so
-lib/libmplmpu.so
-lib/libyasalgo.so
+#lib/hw/sensors.universal7570.so
+#lib/libinvensense_hal.so
+#lib/libmllite.so
+#lib/libmplmpu.so
+#lib/libyasalgo.so
 
 # Wifi
-etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
-etc/wifi/bcmdhd_apsta.bin_blob:vendor/etc/wifi/bcmdhd_apsta.bin_blob
-etc/wifi/bcmdhd_clm.blob:vendor/etc/wifi/bcmdhd_clm.blob
-etc/wifi/bcmdhd_mfg.bin:vendor/etc/wifi/bcmdhd_mfg.bin
-etc/wifi/bcmdhd_mfg.bin_blob:vendor/etc/wifi/bcmdhd_mfg.bin_blob
-etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
-etc/wifi/bcmdhd_sta.bin_blob:vendor/etc/wifi/bcmdhd_sta.bin_blob
-etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
-etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
+#etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
+#etc/wifi/bcmdhd_apsta.bin_blob:vendor/etc/wifi/bcmdhd_apsta.bin_blob
+#etc/wifi/bcmdhd_clm.blob:vendor/etc/wifi/bcmdhd_clm.blob
+#etc/wifi/bcmdhd_mfg.bin:vendor/etc/wifi/bcmdhd_mfg.bin
+#etc/wifi/bcmdhd_mfg.bin_blob:vendor/etc/wifi/bcmdhd_mfg.bin_blob
+#etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
+#etc/wifi/bcmdhd_sta.bin_blob:vendor/etc/wifi/bcmdhd_sta.bin_blob
+#etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
+#etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
 
 # NFC
-etc/sec_s3fwrn7_rfreg.bin
-lib/hw/nfc_nci.universal7570.so
-vendor/firmware/sec_s3fwrn7_firmware.bin
+#etc/sec_s3fwrn7_rfreg.bin
+#lib/hw/nfc_nci.universal7570.so
+#vendor/firmware/sec_s3fwrn7_firmware.bin
 
 # cbd, from boot.img and pinned to stop removal when extracting from system image
-bin/cbd:vendor/bin/cbd|22a54c7cdd5077e25eefe402ea2bb1cb0074e927
+bin/cbd:vendor/bin/cbd
